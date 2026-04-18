@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sheikh Mahir Abrar — Portfolio</title>
 
-  <!-- Fonts -->
+  <!-- Fonts for Titles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Quintessential&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Quintessential&display=swap" rel="stylesheet">
+
+  <!-- Fonts for Body -->
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Quintessential&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -25,13 +28,14 @@
   <nav id="navbar">
     <div class="nav-logo">SMA</div>
     <ul class="nav-links">
-      <li><a href="#home"     class="nav-btn active">Home</a></li>
-      <li><a href="#about"    class="nav-btn">About</a></li>
+      <li><a href="#home"       class="nav-btn active">Home</a></li>
+      <li><a href="#about"      class="nav-btn">About</a></li>
       <li><a href="#experience" class="nav-btn">Experience</a></li>
+      <li><a href="#projects"   class="nav-btn">Projects</a></li>
       <li><a href="#education"  class="nav-btn">Education</a></li>
       <li><a href="#achievements" class="nav-btn">Achievements</a></li>
-      <li><a href="#hobbies"  class="nav-btn">Hobbies</a></li>
-      <li><a href="#contact"  class="nav-btn">Contact</a></li>
+      <li><a href="#hobbies"    class="nav-btn">Hobbies</a></li>
+      <li><a href="#contact"    class="nav-btn">Contact</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -41,31 +45,33 @@
   <!-- ── HERO ── -->
   <section id="home" class="hero">
     <div class="hero-noise"></div>
-    <div class="hero-content reveal">
-      <p class="hero-greeting">Hello, I'm</p>
-      <h1 class="hero-name">Sheikh<br/>Mahir<br/>Abrar</h1>
-      <p class="hero-title">Industrial &amp; Production Engineer</p>
-      <p class="hero-sub">BUET · CSCA® · Supply Chain · Manufacturing · Design</p>
-      <div class="hero-btns">
-        <a href="#contact" class="btn-primary">Get In Touch</a>
-        <a href="assets/Resume_of_Sheikh_Mahir_Abrar.pdf" download class="btn-secondary">
-          <i class="fa fa-download"></i> Download CV
-        </a>
+    <div class="hero-inner">
+      <div class="hero-content reveal">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Sheikh<br/>Mahir<br/>Abrar</h1>
+        <p class="hero-title">Industrial &amp; Production Engineer</p>
+        <p class="hero-sub">BUET · CSCA® · Supply Chain · Manufacturing · Design</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary">Get In Touch</a>
+          <a href="assets/Resume_of_Sheikh_Mahir_Abrar.pdf" download class="btn-secondary">
+            <i class="fa fa-download"></i> Download CV
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="mailto:mahirabrar.360@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/sheikh-mahir-abrar-csca™-212330233" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="tel:+8801874578446" aria-label="Phone"><i class="fa fa-phone"></i></a>
+        </div>
       </div>
-      <div class="hero-socials">
-        <a href="mailto:mahirabrar.360@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/sheikh-mahir-abrar-csca™-212330233" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="tel:+8801874578446" aria-label="Phone"><i class="fa fa-phone"></i></a>
+      <div class="hero-photo-wrap reveal-right">
+        <div class="photo-orbit"></div>
+        <div class="photo-frame">
+          <img src="assets/portfolio_image.jpg" alt="Sheikh Mahir Abrar" class="hero-photo"/>
+        </div>
+        <div class="photo-tag tag-1">BUET · IPE</div>
+        <div class="photo-tag tag-2">CGPA 3.90</div>
+        <div class="photo-tag tag-3">CSCA®</div>
       </div>
-    </div>
-    <div class="hero-photo-wrap reveal-right">
-      <div class="photo-orbit"></div>
-      <div class="photo-frame">
-        <img src="assets/portfolio_image.jpg" alt="Sheikh Mahir Abrar" class="hero-photo"/>
-      </div>
-      <div class="photo-tag tag-1">BUET · IPE</div>
-      <div class="photo-tag tag-2">CGPA 3.90</div>
-      <div class="photo-tag tag-3">CSCA®</div>
     </div>
     <div class="scroll-hint">
       <span>Scroll</span>
@@ -257,6 +263,66 @@
 
     </div>
   </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="section proj-section">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">What I've Built</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Project 1: SolidWorks Lathe -->
+      <div class="project-card reveal" style="--delay:0s" data-project="lathe">
+        <div class="proj-thumb">
+          <img src="assets/Solidworks_project.jpg" alt="CA6120/CA6240 Lathe Machine - SolidWorks Model" />
+          <div class="proj-overlay">
+            <span class="proj-open-btn"><i class="fa fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tags-row">
+            <span class="proj-tag">SolidWorks</span>
+            <span class="proj-tag">3D Modeling</span>
+            <span class="proj-tag">Engineering Design</span>
+          </div>
+          <h3 class="proj-title">CA6120 / CA6240 Centre Lathe</h3>
+          <p class="proj-desc">A detailed 3D parametric model of an industrial centre lathe machine, recreated in SolidWorks with full assembly, constraints, and structural analysis.</p>
+        </div>
+      </div>
+
+      <!-- Project 2: NozzlePort -->
+      <div class="project-card reveal" style="--delay:0.15s" data-project="nozzleport">
+        <div class="proj-thumb">
+          <img src="assets/NozzlePort_project.jpg" alt="NozzlePort — Firefighting Hose Management Device" />
+          <div class="proj-overlay">
+            <span class="proj-open-btn"><i class="fa fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tags-row">
+            <span class="proj-tag">Product Design</span>
+            <span class="proj-tag">SolidWorks</span>
+            <span class="proj-tag">ANSYS</span>
+            <span class="proj-tag">QFD</span>
+          </div>
+          <h3 class="proj-title">NozzlePort — Firefighting Device</h3>
+          <p class="proj-desc">An innovative firefighting device that allows a single operator to direct and control multiple high-pressure hose nozzles simultaneously via a mobile, wheeled platform.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PROJECT MODAL ── -->
+  <div class="proj-modal-overlay" id="projModalOverlay">
+    <div class="proj-modal" id="projModal">
+      <button class="proj-modal-close" id="projModalClose" aria-label="Close"><i class="fa fa-times"></i></button>
+      <div class="proj-modal-inner" id="projModalInner">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </div>
 
   <!-- ── EDUCATION ── -->
   <section id="education" class="section edu-section">
