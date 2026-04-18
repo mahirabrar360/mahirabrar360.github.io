@@ -1231,12 +1231,13 @@ img { display: block; width: 100%; }
 .photo-frame {
     width: 100%;
     height: 100%;
-    border-radius: 18px;           /* Nice modern rounded corners */
+    border-radius: 18px !important;          /* Nice modern rounded corners */
     overflow: hidden;
     box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.65),
                 0 0 0 14px rgba(255, 215, 0, 0.15);   /* subtle gold glow */
     background: #0f0f1e;
     transition: all 0.5s ease;
+   
 }
 
 .hero-photo {
