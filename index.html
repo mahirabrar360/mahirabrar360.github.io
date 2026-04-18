@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sheikh Mahir Abrar — Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Quintessential&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <div class="nav-logo">SMA</div>
+    <ul class="nav-links">
+      <li><a href="#home"     class="nav-btn active">Home</a></li>
+      <li><a href="#about"    class="nav-btn">About</a></li>
+      <li><a href="#experience" class="nav-btn">Experience</a></li>
+      <li><a href="#education"  class="nav-btn">Education</a></li>
+      <li><a href="#achievements" class="nav-btn">Achievements</a></li>
+      <li><a href="#hobbies"  class="nav-btn">Hobbies</a></li>
+      <li><a href="#contact"  class="nav-btn">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="home" class="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-content reveal">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Sheikh<br/>Mahir<br/>Abrar</h1>
+      <p class="hero-title">Industrial &amp; Production Engineer</p>
+      <p class="hero-sub">BUET · CSCA® · Supply Chain · Manufacturing · Design</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">Get In Touch</a>
+        <a href="assets/Resume__Feb_2026.pdf" download class="btn-secondary">
+          <i class="fa fa-download"></i> Download CV
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:mahirabrar.360@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/sheikh-mahir-abrar-csca™-212330233" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="tel:+8801874578446" aria-label="Phone"><i class="fa fa-phone"></i></a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap reveal-right">
+      <div class="photo-orbit"></div>
+      <div class="photo-frame">
+        <img src="assets/portfolio_image.jpg" alt="Sheikh Mahir Abrar" class="hero-photo"/>
+      </div>
+      <div class="photo-tag tag-1">BUET · IPE</div>
+      <div class="photo-tag tag-2">CGPA 3.90</div>
+      <div class="photo-tag tag-3">CSCA®</div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT + SKILLS ── -->
+  <section id="about" class="section about-section">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Who I Am</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a <strong>final-year Industrial and Production Engineering student at BUET</strong>, driven by a passion for optimizing systems, solving real-world manufacturing problems, and leading creative initiatives.
+        </p>
+        <p>
+          My academic journey has equipped me with expertise in <strong>manufacturing, optimization, simulation, data analysis, and supply chain management</strong>. Beyond academics, I thrive in leadership roles and creative problem-solving.
+        </p>
+        <p>
+          As a <strong>Certified Supply Chain Analyst (CSCA®)</strong> and multiple-time Dean's List scholar, I combine analytical precision with design thinking — whether it's improving assembly line efficiency or crafting compelling visual narratives.
+        </p>
+        <div class="about-meta">
+          <div class="meta-item">
+            <i class="fa fa-map-marker-alt"></i>
+            <span>Niketon, Gulshan-1, Dhaka, Bangladesh</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa fa-envelope"></i>
+            <span>mahirabrar.360@gmail.com</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa fa-phone"></i>
+            <span>+880 1874-578446</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-panel reveal-right">
+        <h3 class="skills-heading">Skills &amp; Tools</h3>
+        <div class="skills-grid">
+          <div class="skill-card" style="--delay:0.05s">
+            <i class="fa-solid fa-table-cells-large"></i>
+            <span>MS Excel</span>
+            <small>Pivot, VLOOKUP, Charts</small>
+          </div>
+          <div class="skill-card" style="--delay:0.1s">
+            <i class="fa-solid fa-file-word"></i>
+            <span>MS Word</span>
+            <small>Formatting & Styles</small>
+          </div>
+          <div class="skill-card" style="--delay:0.15s">
+            <i class="fa-solid fa-presentation-screen"></i>
+            <span>PowerPoint</span>
+            <small>Animated Decks</small>
+          </div>
+          <div class="skill-card" style="--delay:0.2s">
+            <i class="fa-brands fa-adobe"></i>
+            <span>Photoshop &amp; Illustrator</span>
+            <small>Design & Editing</small>
+          </div>
+          <div class="skill-card" style="--delay:0.25s">
+            <i class="fa-solid fa-palette"></i>
+            <span>Canva</span>
+            <small>Collaborative Design</small>
+          </div>
+          <div class="skill-card" style="--delay:0.3s">
+            <i class="fa-solid fa-film"></i>
+            <span>Premiere Pro</span>
+            <small>Video Editing</small>
+          </div>
+          <div class="skill-card" style="--delay:0.35s">
+            <i class="fa-solid fa-code"></i>
+            <span>LaTeX</span>
+            <small>Document Formatting</small>
+          </div>
+          <div class="skill-card" style="--delay:0.4s">
+            <i class="fa-solid fa-cube"></i>
+            <span>SolidWorks</span>
+            <small>3D Modeling</small>
+          </div>
+          <div class="skill-card" style="--delay:0.45s">
+            <i class="fa-solid fa-microchip"></i>
+            <span>ANSYS</span>
+            <small>Stress Analysis</small>
+          </div>
+          <div class="skill-card" style="--delay:0.5s">
+            <i class="fa-solid fa-chart-bar"></i>
+            <span>Power BI</span>
+            <small>Dashboards & Analytics</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience" class="section exp-section">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">What I've Done</span>
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="tc-header">
+            <div>
+              <h3 class="tc-role">Industrial Attachment Intern</h3>
+              <p class="tc-org">RANCON Industrial Park</p>
+            </div>
+            <span class="tc-date">Nov – Dec 2025</span>
+          </div>
+          <ul class="tc-list">
+            <li>Identified bottlenecks on RMBL Assembly Line 2 through time study and ergonomic assessment.</li>
+            <li>Pinpointed recurring defects by analyzing quality inspection datasets.</li>
+            <li>Supported 5S implementation — sorting tools, standardizing storage, optimizing rack layout.</li>
+            <li>Discussed station merging and line balancing options to contribute to efficiency gains.</li>
+          </ul>
+          <div class="tc-tags">
+            <span>Time Study</span><span>5S</span><span>Line Balancing</span><span>Quality Analysis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="tc-header">
+            <div>
+              <h3 class="tc-role">Campus Ambassador</h3>
+              <p class="tc-org">PRAN-RFL Group</p>
+            </div>
+            <span class="tc-date">2025 – 2026</span>
+          </div>
+          <ul class="tc-list">
+            <li>Served as primary liaison between PRAN-RFL and BUET, promoting brand presence and talent outreach.</li>
+            <li>Coordinated and hosted company reps at <em>Corporate Connect</em>, IPE Fiesta 2026.</li>
+          </ul>
+          <div class="tc-tags">
+            <span>Brand Relations</span><span>Event Coordination</span><span>Liaison</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="tc-header">
+            <div>
+              <h3 class="tc-role">Vice-President</h3>
+              <p class="tc-org">BUET Entrepreneurship Development Club (EDC)</p>
+            </div>
+            <span class="tc-date">2022 – Ongoing</span>
+          </div>
+          <ul class="tc-list">
+            <li>Supervising the Design Team — 100+ designs generating 4,000+ impressions.</li>
+            <li>Managed 10+ seminars and events through active design and logistics involvement.</li>
+          </ul>
+          <div class="tc-tags">
+            <span>Leadership</span><span>Visual Design</span><span>Event Management</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="tc-header">
+            <div>
+              <h3 class="tc-role">Financial Secretary</h3>
+              <p class="tc-org">Association of Industrial and Production Engineers (AIPE)</p>
+            </div>
+            <span class="tc-date">2022 – Ongoing</span>
+          </div>
+          <ul class="tc-list">
+            <li>Overseeing budget management, financial planning, and resource allocation.</li>
+            <li>Designed and published the first full departmental magazine at IPE Fiesta 2024.</li>
+            <li>Created visual elements and managed event logistics for major club occasions.</li>
+          </ul>
+          <div class="tc-tags">
+            <span>Finance</span><span>Publication</span><span>Design</span><span>Logistics</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section id="education" class="section edu-section">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Academic Path</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+    <div class="edu-cards">
+
+      <div class="edu-card reveal">
+        <div class="edu-icon"><i class="fa fa-graduation-cap"></i></div>
+        <div class="edu-body">
+          <span class="edu-year">2022 – 2026</span>
+          <h3>Bangladesh University of Engineering and Technology</h3>
+          <p class="edu-degree">B.Sc. in Industrial and Production Engineering</p>
+          <p class="edu-detail">Ongoing Level-4, Term-2</p>
+          <div class="edu-badge">CGPA 3.90 / 4.00</div>
+        </div>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-icon"><i class="fa fa-school"></i></div>
+        <div class="edu-body">
+          <span class="edu-year">2020</span>
+          <h3>Notre Dame College, Dhaka</h3>
+          <p class="edu-degree">Higher Secondary Certificate (HSC)</p>
+          <p class="edu-detail">Science Group</p>
+          <div class="edu-badge">GPA 5.00 / 5.00</div>
+        </div>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-icon"><i class="fa fa-book"></i></div>
+        <div class="edu-body">
+          <span class="edu-year">2018</span>
+          <h3>Udayan Secondary School, Barishal</h3>
+          <p class="edu-degree">Secondary School Certificate (SSC)</p>
+          <p class="edu-detail">Science Group</p>
+          <div class="edu-badge">GPA 5.00 / 5.00</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── ACHIEVEMENTS ── -->
+  <section id="achievements" class="section ach-section">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Recognition</span>
+      <h2 class="section-title">Achievements</h2>
+    </div>
+    <div class="ach-grid">
+
+      <div class="ach-card award reveal" style="--delay:0s">
+        <div class="ach-icon"><i class="fa fa-trophy"></i></div>
+        <h4>100% Scholarship Winner</h4>
+        <p>ISCEA Prize Global Supply Chain Case Competition 2024</p>
+      </div>
+
+      <div class="ach-card award reveal" style="--delay:0.1s">
+        <div class="ach-icon"><i class="fa fa-star"></i></div>
+        <h4>Annual Dean's List Scholarship</h4>
+        <p>BUET — Awarded 3 times consecutively</p>
+      </div>
+
+      <div class="ach-card cert reveal" style="--delay:0.2s">
+        <div class="ach-icon"><i class="fa fa-certificate"></i></div>
+        <h4>CSCA® Certified</h4>
+        <p>Certified Supply Chain Analyst — ISCEA (2025)</p>
+      </div>
+
+      <div class="ach-card cert reveal" style="--delay:0.3s">
+        <div class="ach-icon"><i class="fab fa-microsoft"></i></div>
+        <h4>Work Smarter with Microsoft Excel</h4>
+        <p>Coursera Certification</p>
+      </div>
+
+      <div class="ach-card cert reveal" style="--delay:0.4s">
+        <div class="ach-icon"><i class="fa fa-check-circle"></i></div>
+        <h4>Perfect Attendance</h4>
+        <p>Notre Dame College, Dhaka (2020)</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── HOBBIES ── -->
+  <section id="hobbies" class="section hobby-section">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Beyond Work</span>
+      <h2 class="section-title">Hobbies &amp; Interests</h2>
+    </div>
+    <div class="hobby-grid">
+      <div class="hobby-card reveal" style="--delay:0s">
+        <div class="hobby-icon">🚲</div>
+        <h4>Cycling</h4>
+        <p>Exploring Dhaka's streets and beyond on two wheels — freedom in motion.</p>
+      </div>
+      <div class="hobby-card reveal" style="--delay:0.1s">
+        <div class="hobby-icon">✏️</div>
+        <h4>Drawing</h4>
+        <p>Sketching ideas and characters — creativity flows through pen and paper.</p>
+      </div>
+      <div class="hobby-card reveal" style="--delay:0.2s">
+        <div class="hobby-icon">📺</div>
+        <h4>TV Series</h4>
+        <p>Immersing in complex narratives and rich storytelling across genres.</p>
+      </div>
+      <div class="hobby-card reveal" style="--delay:0.3s">
+        <div class="hobby-icon">⛩️</div>
+        <h4>Anime</h4>
+        <p>A dedicated fan of intricate plots, stunning animation, and deep world-building.</p>
+      </div>
+      <div class="hobby-card reveal" style="--delay:0.4s">
+        <div class="hobby-icon">🎮</div>
+        <h4>Video Games</h4>
+        <p>Strategy and adventure games sharpen decision-making and problem-solving.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section contact-section">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Let's Connect</span>
+      <h2 class="section-title">Get In Touch</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p class="contact-intro">Whether it's a job opportunity, collaboration, or just a hello — I'd love to hear from you.</p>
+        <div class="contact-items">
+          <a href="mailto:mahirabrar.360@gmail.com" class="contact-item">
+            <div class="ci-icon"><i class="fa fa-envelope"></i></div>
+            <div>
+              <span class="ci-label">Email</span>
+              <span class="ci-val">mahirabrar.360@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+8801874578446" class="contact-item">
+            <div class="ci-icon"><i class="fa fa-phone"></i></div>
+            <div>
+              <span class="ci-label">Phone</span>
+              <span class="ci-val">+880 1874-578446</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/sheikh-mahir-abrar-csca™-212330233" target="_blank" class="contact-item">
+            <div class="ci-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <span class="ci-label">LinkedIn</span>
+              <span class="ci-val">sheikh-mahir-abrar-csca™</span>
+            </div>
+          </a>
+          <div class="contact-item no-link">
+            <div class="ci-icon"><i class="fa fa-map-marker-alt"></i></div>
+            <div>
+              <span class="ci-label">Location</span>
+              <span class="ci-val">Niketon, Gulshan-1, Dhaka-1212, Bangladesh</span>
+            </div>
+          </div>
+        </div>
+        <a href="assets/Resume__Feb_2026.pdf" download class="btn-primary dl-btn">
+          <i class="fa fa-download"></i> Download Full CV
+        </a>
+      </div>
+      <div class="contact-deco reveal-right">
+        <div class="deco-ring r1"></div>
+        <div class="deco-ring r2"></div>
+        <div class="deco-ring r3"></div>
+        <div class="deco-text">SMA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <p>© 2026 Sheikh Mahir Abrar · Designed with passion in Dhaka</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
