@@ -1189,3 +1189,26 @@ img { display: block; width: 100%; }
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* ====================== CONTACT DECORATIVE NAME ====================== */
+.deco-text.deco-name {
+    font-family: 'Aleo', serif;           /* Elegant & strong title font */
+    /* font-family: 'Arvo', serif; */     /* Alternative: more bold & classic */
+    /* font-family: 'Poppins', sans-serif; */ /* Modern & clean option */
+
+    font-size: 0.75rem;                    /* Change this to adjust size */
+    font-weight: 500;                     /* 400 = normal, 700 = bold, 900 = extra bold */
+    font-style: normal;
+    color: #ffffff;                       /* Or any color you like, e.g. #e0e0e0 */
+    text-align: center;
+    letter-spacing: 0.5em;              /* Makes it look more premium */
+    line-height: 1.1;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);   /* Optional soft glow */
+}
+
+/* Optional: Make it responsive (smaller on mobile) */
+@media (max-width: 768px) {
+    .deco-text.deco-name {
+        font-size: 2.2rem;
+    }
+}
