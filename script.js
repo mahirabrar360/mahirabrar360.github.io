@@ -330,7 +330,7 @@ function openModal(projectKey) {
   if (!data) return;
 
   modalInner.innerHTML = `
-    <img src="${data.image}" alt="${data.title}" class="modal-img" onerror="this.style.display='none'"/>
+    <img src="${data.image}" alt="${data.title}" class="modal-img" "this.src='https://via.placeholder.com/600x400?text=Image+Not+Found'; console.log('Image failed to load: ' + this.src);"/>
     <p class="modal-subtitle">${data.subtitle}</p>
     <h2 class="modal-title">${data.title}</h2>
     <div class="modal-tags">
