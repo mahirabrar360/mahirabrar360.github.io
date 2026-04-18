@@ -315,7 +315,7 @@ const projectData = {
       <p>A full House of Quality was developed mapping nine customer requirements (including ease of movement, stability, reliability, and human stress reduction) against twelve engineering parameters. The NozzlePort achieved competitive customer ratings of 470 on key parameters — comparable or superior to benchmarked competitors including Aqua Blaster, Blitzfire Monitor, and Rosenbauer products.</p>
 
       <h4 class="modal-section-title">Team</h4>
-      <p>Md. Arfin Emrose Anik · Sheikh Mahir Abrar · Tanvee Sadat · Md. Nazimus Sakib · Sadia Faruque — Level 4, Term 1, IPE, BUET</p>
+      <p>Md. Arfin Emrose Anik · Sheikh Mahir Abrar · Tanvee Sadat · Md. Nazimus Sakib · Sadia Faruque Department of IPE, BUET</p>
     `
   }
 };
