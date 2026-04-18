@@ -1244,7 +1244,7 @@ img { display: block; width: 100%; }
 }
 
 
-/* ====================== RECTANGULAR PHOTO + ANIMATED RINGS (Final) ====================== */
+/* ====================== RECTANGULAR PHOTO + ANIMATED RINGS (Fixed & Working) ====================== */
 
 .hero-photo-wrap.rectangular-frame {
     position: relative;
@@ -1255,10 +1255,10 @@ img { display: block; width: 100%; }
     z-index: 2;
 }
 
-/* Animated Rings Layer */
+/* Rings Container */
 .photo-rings {
     position: absolute;
-    inset: -45px;                 /* How much the rings extend outside */
+    inset: -45px;
     pointer-events: none;
     z-index: 1;
 }
@@ -1267,59 +1267,43 @@ img { display: block; width: 100%; }
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 50%;
     border: 2px solid var(--gold);
+    transform: translate(-50%, -50%);
     opacity: 0.28;
-    animation: ring-pulse 10s ease-in-out infinite;
 }
 
-.r1 {
-    width: 440px;
-    height: 440px;
-    border-color: var(--gold);
-    opacity: 0.35;
+/* Individual ring sizes */
+.r1 { width: 440px; height: 440px; border-color: var(--gold); opacity: 0.35; }
+.r2 { width: 520px; height: 520px; border-color: rgba(217, 177, 102, 0.65); opacity: 0.22; }
+.r3 { width: 610px; height: 610px; border-color: rgba(122, 91, 166, 0.45); opacity: 0.16; }
+
+/* Combined Animation - Pulse + Slow Rotate */
+.ring {
+    animation: 
+        ring-pulse 9s ease-in-out infinite,
+        ring-rotate 32s linear infinite;
 }
 
-.r2 {
-    width: 520px;
-    height: 520px;
-    border-color: rgba(217, 177, 102, 0.65);
-    animation-delay: 2.5s;
-    opacity: 0.22;
-}
-
-.r3 {
-    width: 610px;
-    height: 610px;
-    border-color: rgba(122, 91, 166, 0.45);
-    animation-delay: 5s;
-    opacity: 0.16;
-}
-
+/* Pulse Animation */
 @keyframes ring-pulse {
     0%, 100% {
-        transform: translate(-50%, -50%) scale(0.94);
-        opacity: 0.18;
+        transform: translate(-50%, -50%) scale(0.95);
+        opacity: 0.20;
     }
     50% {
-        transform: translate(-50%, -50%) scale(1.10);
+        transform: translate(-50%, -50%) scale(1.08);
         opacity: 0.48;
     }
 }
 
-/* Optional gentle rotation */
-.ring {
-    animation: ring-pulse 10s ease-in-out infinite,
-               ring-rotate 28s linear infinite;
-}
-
+/* Slow Rotation Animation */
 @keyframes ring-rotate {
     from { transform: translate(-50%, -50%) rotate(0deg); }
     to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* The Photo Frame - On top of rings */
+/* The Photo Frame - Must stay on top */
 .photo-frame {
     position: relative;
     z-index: 2;
@@ -1352,15 +1336,9 @@ img { display: block; width: 100%; }
 
 /* Responsive */
 @media (max-width: 1100px) {
-    .hero-photo-wrap.rectangular-frame {
-        width: 340px;
-        height: 430px;
-    }
+    .hero-photo-wrap.rectangular-frame { width: 340px; height: 430px; }
 }
 
 @media (max-width: 768px) {
-    .hero-photo-wrap.rectangular-frame {
-        width: 290px;
-        height: 370px;
-    }
+    .hero-photo-wrap.rectangular-frame { width: 290px; height: 370px; }
 }
