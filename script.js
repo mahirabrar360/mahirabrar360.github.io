@@ -222,7 +222,7 @@ const projectData = {
   lathe: {
     title: 'CA6120 / CA6240 Centre Lathe',
     subtitle: 'SolidWorks 3D Modelling Project',
-    image: 'assets/Solidworks_project.jpg',
+    image: 'assets/Solidworks_project.png',
     tags: ['SolidWorks', '3D Parametric Modelling', 'Assembly Design', 'Engineering Drawing', 'FEA'],
     content: `
       <h4 class="modal-section-title">Project Overview</h4>
