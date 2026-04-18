@@ -334,62 +334,6 @@ img { display: block; width: 100%; }
   transform: translateY(-3px);
 }
 
-/* ── HERO PHOTO ── */
-.hero-photo-wrap {
-  position: relative;
-  z-index: 2;
-  flex-shrink: 0;
-}
-.photo-orbit {
-  position: absolute;
-  inset: -20px;
-  border-radius: 50% 45% 55% 40%;
-  border: 2px dashed rgba(217, 177, 102, 0.3);
-  animation: orbit-spin 20s linear infinite;
-}
-@keyframes orbit-spin {
-  to { transform: rotate(360deg); }
-}
-.photo-frame {
-  width: 320px; height: 400px;
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  overflow: hidden;
-  border: 3px solid var(--gold);
-  box-shadow: 0 0 0 10px rgba(217,177,102,0.06), 0 20px 60px rgba(57, 34, 89, 0.5);
-  position: relative;
-}
-.hero-photo {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  transition: transform 0.6s ease;
-}
-.photo-frame:hover .hero-photo { transform: scale(1.04); }
-
-.photo-tag {
-  position: absolute;
-  background: rgba(20, 11, 38, 0.9);
-  border: 1px solid rgba(217,177,102,0.35);
-  border-radius: 50px;
-  padding: 6px 14px;
-  font-family: var(--font-ui);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  color: var(--gold);
-  box-shadow: 0 4px 14px var(--shadow);
-  animation: float-tag 4s ease-in-out infinite;
-  backdrop-filter: blur(8px);
-}
-.tag-1 { top: 20px; left: -50px; animation-delay: 0s; }
-.tag-2 { bottom: 60px; left: -60px; animation-delay: 1.3s; }
-.tag-3 { top: 60px; right: -40px; animation-delay: 0.7s; }
-@keyframes float-tag {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-8px); }
-}
-
-
 
 /* ── SCROLL HINT ── */
 .scroll-hint {
@@ -1215,13 +1159,6 @@ img { display: block; width: 100%; }
     }
 }
 
-/* ====================== RECTANGULAR HERO PHOTO FRAME (Fixed) ====================== */
-.hero-photo-wrap.rectangular-frame {
-    position: relative;
-    width: 380px;
-    height: 480px;
-    margin: 0 auto;
-}
 
 /* Hide the old egg/orbit animation completely */
 .hero-photo-wrap.rectangular-frame .photo-orbit {
@@ -1307,18 +1244,21 @@ img { display: block; width: 100%; }
 }
 
 
-/* ====================== ANIMATED RINGS BEHIND RECTANGULAR PHOTO ====================== */
+/* ====================== RECTANGULAR PHOTO + ANIMATED RINGS (Final) ====================== */
+
 .hero-photo-wrap.rectangular-frame {
     position: relative;
     width: 380px;
     height: 480px;
     margin: 0 auto;
+    flex-shrink: 0;
+    z-index: 2;
 }
 
-/* Rings Container */
+/* Animated Rings Layer */
 .photo-rings {
     position: absolute;
-    inset: -35px;           /* How far the rings extend outside the frame */
+    inset: -45px;                 /* How much the rings extend outside */
     pointer-events: none;
     z-index: 1;
 }
@@ -1328,53 +1268,50 @@ img { display: block; width: 100%; }
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid var(--gold);
     border-radius: 50%;
-    opacity: 0.25;
-    animation: ring-pulse 8s ease-in-out infinite;
+    border: 2px solid var(--gold);
+    opacity: 0.28;
+    animation: ring-pulse 10s ease-in-out infinite;
 }
 
-/* Different sizes and delays for nice layered effect */
 .r1 {
-    width: 420px;
-    height: 420px;
+    width: 440px;
+    height: 440px;
     border-color: var(--gold);
-    animation-delay: 0s;
     opacity: 0.35;
 }
 
 .r2 {
-    width: 490px;
-    height: 490px;
-    border-color: rgba(217, 177, 102, 0.6);
-    animation-delay: 2.2s;
+    width: 520px;
+    height: 520px;
+    border-color: rgba(217, 177, 102, 0.65);
+    animation-delay: 2.5s;
     opacity: 0.22;
 }
 
 .r3 {
-    width: 570px;
-    height: 570px;
-    border-color: rgba(122, 91, 166, 0.5);
-    animation-delay: 4.5s;
-    opacity: 0.18;
+    width: 610px;
+    height: 610px;
+    border-color: rgba(122, 91, 166, 0.45);
+    animation-delay: 5s;
+    opacity: 0.16;
 }
 
-/* Pulse + Gentle Rotate Animation */
 @keyframes ring-pulse {
     0%, 100% {
-        transform: translate(-50%, -50%) scale(0.92);
+        transform: translate(-50%, -50%) scale(0.94);
         opacity: 0.18;
     }
     50% {
-        transform: translate(-50%, -50%) scale(1.08);
-        opacity: 0.45;
+        transform: translate(-50%, -50%) scale(1.10);
+        opacity: 0.48;
     }
 }
 
-/* Optional slow rotation for more premium feel */
+/* Optional gentle rotation */
 .ring {
-    animation: ring-pulse 9s ease-in-out infinite,
-               ring-rotate 25s linear infinite;
+    animation: ring-pulse 10s ease-in-out infinite,
+               ring-rotate 28s linear infinite;
 }
 
 @keyframes ring-rotate {
@@ -1382,16 +1319,48 @@ img { display: block; width: 100%; }
     to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* Make sure the actual photo frame stays on top */
+/* The Photo Frame - On top of rings */
 .photo-frame {
     position: relative;
     z-index: 2;
     width: 100%;
     height: 100%;
-    border-radius: 20px !important;
+    border-radius: 20px;
     overflow: hidden;
-    border: 4px solid var(--gold);
+    border: 5px solid var(--gold);
     box-shadow: 0 30px 70px -15px var(--shadow-heavy),
-                0 0 0 16px rgba(217, 177, 102, 0.12);
+                0 0 0 18px rgba(217, 177, 102, 0.15);
     background: var(--dark2);
+    transition: transform 0.5s ease;
+}
+
+.hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+/* Hover Effect */
+.hero-photo-wrap.rectangular-frame:hover .photo-frame {
+    transform: translateY(-16px);
+}
+
+.hero-photo-wrap.rectangular-frame:hover .hero-photo {
+    transform: scale(1.07);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .hero-photo-wrap.rectangular-frame {
+        width: 340px;
+        height: 430px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-photo-wrap.rectangular-frame {
+        width: 290px;
+        height: 370px;
+    }
 }
